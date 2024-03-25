@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 # Treap Class
 # This class has the following attributes:
 # key: The key of the node
-# priority: The priority of the node
+# priority: The priority of the node (randomly generated if not provided)
 # parent: The parent of the node
 # left: The left child of the node
 # right: The right child of the node
