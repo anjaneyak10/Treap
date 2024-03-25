@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 class Treap:
     def __init__(self, key='', priority=-1,parent=None ,left=None, right=None):
         self.key=key
-        self.priority = random.randint(0, 100)
         if priority==-1:
             self.priority = random.randint(0, 100)
         else:
@@ -76,6 +75,8 @@ def right_rotate(tnode):
         else:
             tnode.parent.right = tnode
     return tnode
+
+
 # insert function
 # This function accepts the root node and a new node as arguments and inserts the new node into the tree
 # The function returns the root node of the tree
@@ -172,7 +173,7 @@ def question3():
     root = None
     for i in treapInputList:
         root = insert(root, Treap(i))
-    visualize_tree(root)
+    # visualize_tree(root)
     return root
 
 # searchInTextFile function
@@ -213,7 +214,7 @@ def createTreeWithGivenPriority():
     root = None
     for i in treapInputList:
         root = insert(root, Treap(i, map[i]))
-    visualize_tree(root)
+    # visualize_tree(root)
     return root
 
 
@@ -224,7 +225,7 @@ def createTreeWithSamePriority():
     root = None
     for i in range(len(characters)):
         root = insert(root, Treap(characters[i],1))
-    visualize_tree(root)
+    # visualize_tree(root)
     return root
 
 # main function
